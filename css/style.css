@@ -29,15 +29,16 @@ body {
 }
 
 #card-wrapper {
-    border-radius: 10px;
+    border-radius: 8px;
     width: 328px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    margin-top: 6rem;
 }
 
 .category-card {
-    padding: 5rem;
+    padding: 4.8rem;
     height: 442px;
 }
 
@@ -58,18 +59,18 @@ body {
     font-family: 'Big Shoulders Display', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 3.2rem;
+    font-size: 4rem;
     color: var(--very-light-gray);
-    margin: 3.1rem 0;
+    margin: 3.2rem 0 2.6rem 0;
 }
 
 .paragraphs {
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 400;
     font-size: 1.5rem;
-    line-height: 2.4rem;
+    line-height: 2.5rem;
     color: var(--paragraphs-color);
-    margin-bottom: 3rem;
+    margin-bottom: 2.4rem;
 }
 
 .learn-more-btn {
@@ -90,21 +91,35 @@ body {
     cursor: pointer;
 }
 
+.attribution {
+    margin-top: 3rem;
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 3rem;
+    font-size: 1.3rem;
+    text-align: center;
+    color: var(--very-dark-cyan);
+}
+
+.attribution a {
+    color: var(--bright-orange);
+}
+
 @media (min-width: 1025px) {
     
     #card-wrapper {
         flex-direction: row;
         justify-content: center;
         width: unset;
+        margin-top: calc(40px + 6rem);
     }
     
     .category-card {
        
         height: 500px;
-        width: 308px;
+        width: 307px;
     }
     
     .paragraphs {
-        margin-bottom: 9rem;
+        margin-bottom: 8.2rem;
     }
 }
